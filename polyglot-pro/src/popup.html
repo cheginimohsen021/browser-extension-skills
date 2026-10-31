@@ -4,12 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Polyglot Pro</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div id="app">
-      <h1>Polyglot Pro</h1>
-      <button id="quick-translate">Translate</button>
+    <div id="app" class="popup-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="logo">P</div>
+          <div>
+            <p class="eyebrow">Translation</p>
+            <h1>Polyglot Pro</h1>
+          </div>
+        </div>
+      </header>
+
+      <main class="panel">
+        <label for="source-text" class="sr-only">Source text</label>
+        <textarea id="source-text" rows="5" placeholder="Type or paste text to translate"></textarea>
+
+        <div class="toolbar">
+          <label>
+            Target language
+            <select id="target-language">
+              <option value="en">English</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+              <option value="de">German</option>
+              <option value="it">Italian</option>
+              <option value="ja">Japanese</option>
+              <option value="pt">Portuguese</option>
+              <option value="ar">Arabic</option>
+              <option value="fa">Persian</option>
+            </select>
+          </label>
+
+          <label>
+            Display mode
+            <select id="display-mode">
+              <option value="replace">Replace</option>
+              <option value="bilingual">Bilingual</option>
+              <option value="hover">Hover</option>
+              <option value="tooltip">Tooltip</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="translate-btn" class="primary">Translate</button>
+          <button id="reset-btn" class="secondary">Clear</button>
+        </div>
+
+        <section class="result-card">
+          <p class="label">Result</p>
+          <div id="result" class="result-text" aria-live="polite">
+            No translation yet.
+          </div>
+        </section>
+      </main>
     </div>
+
     <script type="module" src="./popup.ts"></script>
   </body>
 </html>
