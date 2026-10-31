@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Polyglot Pro icon">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="#0f172a"/>
+  <path d="M28 88 L58 40 L76 40 L46 88 Z" fill="url(#g)"/>
+  <path d="M48 82 L78 34 L98 34 L68 82 Z" fill="#e2e8f0" opacity="0.9"/>
+  <circle cx="92" cy="46" r="10" fill="#f8fafc"/>
+  <path d="M64 100 C74 90, 90 90, 100 100" fill="none" stroke="#7dd3fc" stroke-width="8" stroke-linecap="round"/>
+</svg>
